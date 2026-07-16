@@ -11,7 +11,7 @@ zero framework hydration, near-zero JS), perfect Lighthouse potential, and easy 
 - **CSS**: `assets/css/styles.css` — design-system tokens, components, responsive rules.
 - **JS**: `assets/js/main.js` — sticky nav, mobile menu, scroll reveal (IntersectionObserver),
   animated counters, progressive form validation. Respects `prefers-reduced-motion`.
-- **Fonts**: Inter (body) + Space Grotesk (headings) via Google Fonts.
+- **Fonts**: Cairo (body + headings) via Google Fonts.
 - **Icons**: inline SVG (Lucide-style), no icon font.
 
 ## Design system
