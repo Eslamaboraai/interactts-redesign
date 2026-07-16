@@ -90,7 +90,7 @@
         entries.forEach(function (en) {
           if (en.isIntersecting) { animateCount(en.target); cio.unobserve(en.target); }
         });
-      }, { threshold: 0.5 });
+      }, { threshold: 0.15 });
       counters.forEach(function (el) { cio.observe(el); });
     }
   }

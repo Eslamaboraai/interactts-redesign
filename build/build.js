@@ -33,6 +33,8 @@ function clientLogos() {
 }
 
 const pages = [
+  { file: "index.html", active: "home", title: "Interact Technology Solutions — Your Trusted Partner of Choice", desc: "Interact Technology Solutions — leaders in providing the latest technologies and best practices to deliver optimized IT solutions and professional services. Your Trusted Partner of Choice since 1996.", canon: "https://www.interactts.com/" },
+  { file: "corporate-profile.html", active: "about", title: "Corporate Profile — Interact Technology Solutions", desc: "Our story, vision, mission and core values — plus the Interact Technology Solutions timeline from 1996 to today.", canon: "https://www.interactts.com/corporate-profile/" },
   { file: "solutions.html", active: "solutions", title: "Solutions — Interact Technology Solutions", desc: "Business, cloud and imaging & printing solutions delivered with the latest technologies and best practices.", canon: "https://www.interactts.com/solutions/" },
   { file: "products.html", active: "products", title: "Products — Interact Technology Solutions", desc: "A full range of hardware, cloud, servers, printers, security and networking products from 20+ leading global IT vendors.", canon: "https://www.interactts.com/products/" },
   { file: "services.html", active: "services", title: "Services — Interact Technology Solutions", desc: "Hardware, IT infrastructure & data center, outsourcing, consulting and deployment & integration services.", canon: "https://www.interactts.com/services/" },
