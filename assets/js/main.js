@@ -24,12 +24,12 @@
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      document.body.style.overflow = open && window.innerWidth <= 860 ? "hidden" : "";
+      document.body.style.overflow = open && window.innerWidth <= 1100 ? "hidden" : "";
     });
     // Mobile dropdown accordions
     menu.querySelectorAll(".has-dropdown > .nav-link").forEach(function (link) {
       link.addEventListener("click", function (e) {
-        if (window.innerWidth <= 860) {
+        if (window.innerWidth <= 1100) {
           e.preventDefault();
           link.parentElement.classList.toggle("open");
         }
