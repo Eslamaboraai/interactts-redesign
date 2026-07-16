@@ -106,45 +106,65 @@
           <div><strong data-count="35">0</strong>Industries</div>
         </div>
       </div>
+      
+      <!-- Handcrafted Tech Dashboard Mockup (Hero Visual) -->
       <div class="hero-visual" data-reveal data-delay="2" aria-hidden="true">
         <span class="hero-ring"></span>
-        <svg class="hero-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:100%; height:100%; top:0; left:0; z-index:-1; opacity:0.35;">
-          <defs>
-            <radialGradient id="hero-glow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25" />
-              <stop offset="100%" stop-color="transparent" stop-opacity="0" />
-            </radialGradient>
-            <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.8" />
-              <stop offset="50%" stop-color="var(--accent-2)" stop-opacity="0.8" />
-              <stop offset="100%" stop-color="var(--success)" stop-opacity="0.2" />
-            </linearGradient>
-          </defs>
-          <circle cx="250" cy="250" r="180" fill="url(#hero-glow)" />
-          <!-- Connected network nodes -->
-          <path d="M120 100 L250 80 L380 120 L400 280 L250 420 L100 320 Z" stroke="url(#line-glow)" stroke-width="1.5" stroke-dasharray="4 4" />
-          <path d="M250 80 L250 420" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-          <path d="M120 100 L400 280" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-          <path d="M380 120 L100 320" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-          <!-- Nodes -->
-          <circle cx="250" cy="80" r="4" fill="var(--accent-2)" />
-          <circle cx="120" cy="100" r="3.5" fill="var(--accent)" />
-          <circle cx="380" cy="120" r="4" fill="var(--success)" />
-          <circle cx="400" cy="280" r="3.5" fill="var(--accent)" />
-          <circle cx="250" cy="420" r="5" fill="var(--accent-2)" />
-          <circle cx="100" cy="320" r="3.5" fill="var(--success)" />
-        </svg>
-        <div class="hero-panel p1">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1a7 7 0 1 0-12 6"/></svg></div>
-          <h4>Cloud Solutions</h4><p>99.9% scheduled uptime SLA</p>
-        </div>
-        <div class="hero-panel p2">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="8" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 8h.01M7 17h.01"/></svg></div>
-          <h4>IT Infrastructure</h4><p>Datacenter design &amp; delivery</p>
-        </div>
-        <div class="hero-panel p3">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-          <h4>Security &amp; Support</h4><p>Certified technical team</p>
+        <div class="hero-mockup-wrapper">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="mockup-url">https://api.interactts.com/v1/cloud-gateway</div>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-sidebar">
+              <div class="sidebar-item active"></div>
+              <div class="sidebar-item"></div>
+              <div class="sidebar-item"></div>
+            </div>
+            <div class="mockup-content">
+              <!-- Network Nodes Visual -->
+              <svg class="mockup-node-svg" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 70 L90 30 L150 50 L190 100 L110 120 Z" stroke="rgba(79, 70, 229, 0.3)" stroke-width="1" stroke-dasharray="3 3" />
+                <path d="M90 30 L110 120" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" />
+                <path d="M30 70 L150 50" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" />
+                <circle cx="90" cy="30" r="4" fill="var(--success)" />
+                <circle cx="30" cy="70" r="4" fill="var(--accent)" />
+                <circle cx="150" cy="50" r="5" fill="var(--accent-2)" />
+                <circle cx="190" cy="100" r="4.5" fill="var(--success)" />
+                <circle cx="110" cy="120" r="4" fill="var(--accent)" />
+              </svg>
+              
+              <!-- Original Floating Cards re-imagined as status logs in the Dashboard -->
+              <div class="dashboard-logs">
+                <div class="log-row">
+                  <div class="log-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1a7 7 0 1 0-12 6"/></svg></div>
+                  <div class="log-info">
+                    <h5>Cloud Solutions</h5>
+                    <p>99.9% scheduled uptime SLA</p>
+                  </div>
+                  <span class="log-status online"></span>
+                </div>
+                <div class="log-row">
+                  <div class="log-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="8" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 8h.01M7 17h.01"/></svg></div>
+                  <div class="log-info">
+                    <h5>IT Infrastructure</h5>
+                    <p>Datacenter design &amp; delivery</p>
+                  </div>
+                  <span class="log-status online"></span>
+                </div>
+                <div class="log-row">
+                  <div class="log-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+                  <div class="log-info">
+                    <h5>Security &amp; Support</h5>
+                    <p>Certified technical team</p>
+                  </div>
+                  <span class="log-status online"></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -192,43 +212,46 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p>
     </div>
 
-    <div class="grid cols-4">
-      <article class="card" data-reveal>
+    <!-- Handcrafted Bento Grid Layout for visual variety -->
+    <div class="grid-bento">
+      <article class="card card--bento card--bento-large card--bento-gradient" data-reveal>
+        <div class="bento-bg-dec"><svg viewBox="0 0 100 100" fill="none"><circle cx="80" cy="20" r="30" stroke="rgba(79, 70, 229, 0.08)" stroke-width="2" /><path d="M20 80 L80 20" stroke="rgba(79,70,229,0.04)" stroke-width="1.5"/></svg></div>
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
         <h3>Business Solutions</h3>
         <p>The best in providing the latest technologies</p>
       </article>
-      <article class="card" data-reveal data-delay="1">
+      <article class="card card--bento" data-reveal data-delay="1">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/></svg></div>
         <h3>Hardware Services</h3>
         <p>We offer full range of appliances for every IT solution</p>
       </article>
-      <article class="card" data-reveal data-delay="2">
+      <article class="card card--bento" data-reveal data-delay="2">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
         <h3>Printing Services</h3>
         <p>Interact provides standard warranty and Care Pack</p>
       </article>
-      <article class="card" data-reveal data-delay="3">
+      <article class="card card--bento card--bento-large card--bento-dark" data-reveal data-delay="3">
+        <div class="bento-bg-dec"><svg viewBox="0 0 100 100" fill="none"><path d="M10 50 Q 50 10, 90 50 T 170 50" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/></svg></div>
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1a7 7 0 1 0-12 6"/></svg></div>
         <h3>Cloud Solutions</h3>
         <p>Microsoft the service provider which hosts and manages</p>
       </article>
-      <article class="card" data-reveal>
+      <article class="card card--bento" data-reveal>
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="8" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 8h.01M7 17h.01"/></svg></div>
         <h3>IT Infrastructure</h3>
         <p>Planning, designing and implementing infrastructure</p>
       </article>
-      <article class="card" data-reveal data-delay="1">
+      <article class="card card--bento" data-reveal data-delay="1">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
         <h3>Deployment and Integration Services</h3>
         <p>Interact provides variety of technical ICT services</p>
       </article>
-      <article class="card" data-reveal data-delay="2">
+      <article class="card card--bento" data-reveal data-delay="2">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 8v4l3 2"/></svg></div>
         <h3>Consulting and Professional Services</h3>
         <p>Trying to solve all of your IT challenges</p>
       </article>
-      <article class="card" data-reveal data-delay="3">
+      <article class="card card--bento" data-reveal data-delay="3">
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Outsourcing</h3>
         <p>Interact gives you access to the specialized IT skills</p>
@@ -237,38 +260,62 @@
   </div>
 </section>
 
-<!-- ============ FACT SHEET / STATS ============ -->
+<!-- ============ FACT SHEET / STATS (Asymmetrical Dashboard Layout) ============ -->
 <section class="section stats" aria-labelledby="factsheet-title">
   <div class="container">
-    <div class="section-head center" data-reveal>
-      <span class="eyebrow">Fact Sheet</span>
-      <h2 id="factsheet-title" style="color:#fff">Proven scale, measurable impact</h2>
-    </div>
-    <div class="stats-grid">
-      <div class="stat" data-reveal>
-        <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="stat-num" data-count="25">0</div>
-        <div class="stat-label">Partnerships</div>
+    <div class="stats-asymmetric">
+      <div class="stats-info" data-reveal>
+        <span class="eyebrow">Fact Sheet</span>
+        <h2 id="factsheet-title" style="color:#fff">Proven scale,<br/>measurable impact</h2>
+        <p>Our operational milestones and capabilities driving modern IT deployments across Egypt and globally since 1996.</p>
       </div>
-      <div class="stat" data-reveal data-delay="1">
-        <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-2.5-2.5H4V2ZM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 1 2.5-2.5H20V2Z"/></svg></div>
-        <div class="stat-num" data-count="64">0</div>
-        <div class="stat-label">Solutions</div>
-      </div>
-      <div class="stat" data-reveal data-delay="2">
-        <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V7l6-4 6 4v14M10 9h4M10 13h4M10 17h4"/></svg></div>
-        <div class="stat-num" data-count="35">0</div>
-        <div class="stat-label">Industries</div>
-      </div>
-      <div class="stat" data-reveal data-delay="3">
-        <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="stat-num" data-count="1200">0</div>
-        <div class="stat-label">Customers</div>
-      </div>
-      <div class="stat" data-reveal data-delay="4">
-        <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15M21 8.5v7L12 21l-9-5.5v-7L12 3l9 5.5ZM3.3 7l8.7 5 8.7-5M12 22V12"/></svg></div>
-        <div class="stat-num" data-count="500">0</div>
-        <div class="stat-label">Products</div>
+      
+      <div class="stats-dashboard">
+        <!-- Main Hero Metric Card with Sparkline -->
+        <div class="stat-main" data-reveal>
+          <div class="stat-main-header">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <span class="stat-badge">Enterprise Scale</span>
+          </div>
+          <div class="stat-val-group">
+            <div class="stat-num" data-count="1200">0</div>
+            <div class="stat-label">Customers served</div>
+          </div>
+          <!-- Sparkline representation of growth -->
+          <svg class="stat-sparkline" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 50 Q 50 35, 90 42 T 170 15 T 210 10" stroke="url(#sparkline-glow)" stroke-width="3" stroke-linecap="round" />
+            <defs>
+              <linearGradient id="sparkline-glow" x1="0" y1="0" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" />
+                <stop offset="100%" stop-color="#34D399" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        
+        <!-- Secondary Grid -->
+        <div class="stat-sub-grid">
+          <div class="stat" data-reveal data-delay="1">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="stat-num" data-count="25">0</div>
+            <div class="stat-label">Partnerships</div>
+          </div>
+          <div class="stat" data-reveal data-delay="2">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-2.5-2.5H4V2ZM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 1 2.5-2.5H20V2Z"/></svg></div>
+            <div class="stat-num" data-count="64">0</div>
+            <div class="stat-label">Solutions</div>
+          </div>
+          <div class="stat" data-reveal data-delay="3">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V7l6-4 6 4v14M10 9h4M10 13h4M10 17h4"/></svg></div>
+            <div class="stat-num" data-count="35">0</div>
+            <div class="stat-label">Industries</div>
+          </div>
+          <div class="stat" data-reveal data-delay="4">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15M21 8.5v7L12 21l-9-5.5v-7L12 3l9 5.5ZM3.3 7l8.7 5 8.7-5M12 22V12"/></svg></div>
+            <div class="stat-num" data-count="500">0</div>
+            <div class="stat-label">Products</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -282,14 +329,40 @@
       <h2 id="oursolutions-title">Expertise proven across industries</h2>
       <p>We have proven our IT expertise and experience in a number of industries and provided IT consulting on a number of topics. We believe that the length of our service agreements is proof of the positive effect of our activities on our clients&rsquo; business.</p>
     </div>
+    
     <div class="grid cols-2">
-      <article class="card" data-reveal>
+      <!-- Upgraded Solutions card with flowchart visuals -->
+      <article class="card card--solutions-large" data-reveal>
+        <div class="solutions-graphic-dec">
+          <!-- Handcrafted Flowchart Blueprint SVG -->
+          <svg viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="25" width="50" height="30" rx="6" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <rect x="95" y="25" width="50" height="30" rx="6" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <rect x="180" y="25" width="50" height="30" rx="6" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <path d="M60 40 L95 40" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <path d="M145 40 L180 40" stroke="var(--accent-2)" stroke-width="1.5" />
+            <circle cx="60" cy="40" r="2" fill="var(--accent)"/>
+            <circle cx="180" cy="40" r="2" fill="var(--accent-2)"/>
+          </svg>
+        </div>
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
         <h3>Business Solutions</h3>
         <p>All testimonials are pointed to us as the best in providing the latest technologies and best practices to deliver optimized solutions.</p>
         <p class="card-more"><a class="link-arrow" href="solutions.html#business">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p>
       </article>
-      <article class="card" data-reveal data-delay="1">
+      
+      <!-- Upgraded Solutions card with cloud cluster nodes -->
+      <article class="card card--solutions-large" data-reveal data-delay="1">
+        <div class="solutions-graphic-dec">
+          <!-- Server Nodes Cluster SVG -->
+          <svg viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="40" r="24" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <circle cx="50" cy="40" r="14" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <circle cx="190" cy="40" r="14" fill="rgba(79, 70, 229, 0.04)" stroke="rgba(79, 70, 229, 0.15)" stroke-width="1.5"/>
+            <path d="M64 40 L96 40" stroke="rgba(79,70,229,0.3)" stroke-width="1.5"/>
+            <path d="M144 40 L176 40" stroke="rgba(79,70,229,0.3)" stroke-width="1.5"/>
+          </svg>
+        </div>
         <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1a7 7 0 1 0-12 6"/></svg></div>
         <h3>Cloud Solutions</h3>
         <p>Rather than the services being installed on the organization&rsquo;s own servers (known as &ldquo;on-premises&rdquo;)</p>
